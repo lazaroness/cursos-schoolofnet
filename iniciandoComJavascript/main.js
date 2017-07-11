@@ -5,7 +5,7 @@ var number1 = 1;
 var bool    = true;
 var double  = 0.0;
 
-// typeof retorna o type do atributo
+// typeof -> retorna o tipo do atributo
 console.log(typeof number);
 
 number = "0";
