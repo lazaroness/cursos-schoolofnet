@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h1>Arrays in JS</h1>
+    <script type="text/javascript">
+      console.log("Curso Javascript Básico - Aula: Arrays");
+
+      var arr1 = new Array("Red", 10, 20.4);
+      var arr2 = Array("Blue", 12, 30.3, arr1);
+      var arr3 = ["Orange", 10, 23.2, arr1, arr2];
+
+      document.write("<p>Array1: " + arr1[0] + "</p>");
+      document.write("<p>Array1: " + arr1[1] + "</p>");
+      document.write("<p>Array1: " + arr1[2] + "</p>");
+
+      document.write("<p>Array2: " + arr2[0] + "</p>");
+      document.write("<p>Array2: " + arr2[1] + "</p>");
+      document.write("<p>Array2: " + arr2[2] + "</p>");
+      document.write("<p>Array2: " + arr2[3][0] + "</p>");
+      document.write("<p>Array2: " + arr2[3][1] + "</p>");
+      document.write("<p>Array2: " + arr2[3][2] + "</p>");
+    </script>
+  </body>
+</html>
