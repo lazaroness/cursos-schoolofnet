@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <title>Metodos de array parte 1</title>
+  </head>
+  <body>
+    <h1>Metodos of Arrays</h1>
+    <strong>concat()</strong>
+    <script type="text/javascript">
+      console.log("Curso Javascript Básico - Aula: Metodos de array parte 1");
+
+      var arr1 = new Array("Red", 10, 20.4);
+      var arr2 = Array("Blue", 12, 30.3, arr1);
+      arr1  = arr1.concat(arr2); // Junta os conteudos dos arrays
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
+    </script>
+
+    <strong>join()</strong>
+    <script type="text/javascript">
+      var list = arr1.join(" - "); // Gera uma string com os elementos do array separados pelos caracteres enviados como paramento
+      document.write("<p>" + list + "</p>");
+      console.log(list);
+    </script>
+
+    <strong>push()</strong>
+    <script type="text/javascript">
+      arr1.push(25); // Adiciona o elemento no final do array
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
+    </script>
+
+    <strong>pop()</strong>
+    <script type="text/javascript">
+      arr1.pop(); // Remove o ultimo elemento do array
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
+    </script>
+
+    <strong>shift()</strong>
+    <script type="text/javascript">
+      arr1.shift(); // Remove o primeiro elemento do array
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
+    </script>
+  </body>
+</html>
