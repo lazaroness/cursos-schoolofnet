@@ -5,10 +5,53 @@
     <title>Metodo de ordenação - Sort</title>
   </head>
   <body>
-    <h1>Metodos of Arrays</h1>
+    <h1>Sort arrays</h1>
     <strong>sort()</strong>
     <script type="text/javascript">
       console.log("Curso Javascript Básico - Aula: Metodo de ordenação - Sort");
+      var arr1 = new Array(10, 20, 4, 6, 3, 5, 2, 0, 1, 9, 30, 50, 45, 15);
+      arr1.sort();
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
+
+      var arr1 = new Array(5, 3, 4, 2, 0, 1);
+      arr1.sort();
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
+    </script>
+
+    <strong>sort() with callback</strong>
+    <script type="text/javascript">
+      var arr1 = new Array(10, 20, 4, 6, 3, 5, 2, 0, 1, 9, 30, 50, 45, 15);
+      function desc(a, b) {
+        if (a > b) {
+          return -1;
+        }
+        if (a < b) {
+          return 1;
+        }
+        if (a === b) {
+          return 0;
+        }
+      }
+      arr1.sort(desc);
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
+
+      function asc(a, b) {
+        if (a < b) {
+          return -1;
+        }
+        if (a > b) {
+          return 1;
+        }
+        if (a === b) {
+          return 0;
+        }
+      }
+      arr1.sort(asc);
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
     </script>
   </body>
 </html>
