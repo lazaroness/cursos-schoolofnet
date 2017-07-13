@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tamanho de arrays</title>
+  </head>
+  <body>
+    <h1>Length</h1>
+    <script type="text/javascript">
+      console.log("Curso Javascript Básico - Aula: Tamanho de arrays");
+
+      var arr1 = new Array("Red", 10, 20.4);
+      var arr2 = Array("Blue", 12, 30.3, arr1);
+      var arr3 = ["Orange", 10, 23.2, arr1, arr2];
+
+      document.write("<p>Array1: " + arr1.length + "</p>");
+      document.write("<p>Array2: " + arr2.length + "</p>");
+      document.write("<p>Array3: " + arr3.length + "</p>");
+    </script>
+
+    <h1>Removing elements</h1>
+    <script type="text/javascript">
+      arr1.length = 2; // Gambiara para remover elementos, definindo apenas as quantidades desejadas.
+      document.write("<p>Array1: " + arr1[0] + "</p>");
+      document.write("<p>Array1: " + arr1[1] + "</p>");
+      document.write("<p>Array1: " + arr1[2] + "</p>");
+    </script>
+  </body>
+</html>
