@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <title>Metodos de array parte 2</title>
+  </head>
+  <body>
+    <h1>Metodos of Arrays</h1>
+    <strong>unshift()</strong>
+    <script type="text/javascript">
+      console.log("Curso Javascript Básico - Aula: Metodos de array parte 2");
+
+      var arr1 = new Array("Red", 10, 20.4);
+      arr1.unshift("New element"); // Adicionando novo elemento no inicio do array
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
+    </script>
+
+    <strong>slice()</strong>
+    <script type="text/javascript">
+      var arr1 = new Array("Red", 10, 20.4, "New element");
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
+      var newArray = arr1.slice(1, 3); // Criando um novo array com os elementos que estão dentro da faixa indicada do outro array
+      document.write("<p>" + newArray + "</p>");
+      console.log(newArray);
+    </script>
+
+    <strong>splice()</strong>
+    <script type="text/javascript">
+      var arr1 = new Array("Red", 10, 20.4, "New element");
+      arr1.splice(1, 2, "A", "B", "C", "D"); // colocando novos elementos em determinada possicao do array
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
+    </script>
+
+    <strong>reverse()</strong>
+    <script type="text/javascript">
+      var arr1 = new Array("A", "B", "C", "D");
+      document.write("<p>" + arr1 + "</p>");
+      arr1.reverse(); // colocando o array ao contrario
+      document.write("<p>" + arr1 + "</p>");
+      console.log(arr1);
+    </script>
+  </body>
+</html>
