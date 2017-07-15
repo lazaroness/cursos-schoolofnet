@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h1>Search</h1>
+    <strong>indexOf(searchElement)</strong>
+    <script type="text/javascript">
+      console.log("Busca com IndexOf(searchElement)");
+
+      var array1 = ["orange", "blue", "red", "blue", "green"];
+      console.log(array1);
+      console.log('array1.indexOf("blue")');
+      var ret    = array1.indexOf("blue");
+      document.write("<p>Ret: " + ret + " value: " + array1[ret] + "</p>");
+      console.log(ret);
+    </script>
+
+    <strong>indexOf(searchElement[, fromIndex])</strong>
+    <script type="text/javascript">
+      console.log("Busca com indexOf(searchElement[, fromIndex])");
+
+      var array1 = ["orange", "blue", "red", "blue", "green"];
+      console.log(array1);
+      console.log('array1.indexOf("blue", 2)');
+      var ret    = array1.indexOf("blue", 2);
+      document.write("<p>Ret: " + ret + " value: " + array1[ret] + "</p>");
+      console.log(ret);
+    </script>
+
+    <strong>lastIndexOf(searchElement)</strong>
+    <script type="text/javascript">
+      console.log("Busca com lastIndexOf(searchElement)");
+
+      var array1 = ["orange", "blue", "red", "blue", "green"];
+      console.log(array1);
+      console.log('array1.lastIndexOf("blue")');
+      var ret    = array1.lastIndexOf("blue");
+      document.write("<p>Ret: " + ret + " value: " + array1[ret] + "</p>");
+      console.log(ret);
+    </script>
+
+    <strong>lastIndexOf(searchElement[, fromIndex])</strong>
+    <script type="text/javascript">
+      console.log("Busca com lastIndexOf(searchElement[, fromIndex])");
+
+      var array1 = ["orange", "blue", "red", "blue", "green"];
+      console.log(array1);
+      console.log('array1.lastIndexOf("blue", 2)');
+      var ret    = array1.lastIndexOf("blue", 2);
+      document.write("<p>Ret: " + ret + " value: " + array1[ret] + "</p>");
+      console.log(ret);
+    </script>
+  </body>
+</html>
