@@ -53,5 +53,38 @@
       document.write("<p>Ret: " + ret + " value: " + array1[ret] + "</p>");
       console.log(ret);
     </script>
+
+    <br /><hr /><br />
+
+    <h1>Search in practice</h1>
+    <br />
+    <input type="text" id="search" />
+    <button onclick="search()">search</button>
+    <br />
+    <strong>Result: </strong>
+    <br />
+    <span id="result"></span>
+    <script type="text/javascript">
+      function search(){
+        var array   = ["a content of a blog", "news of an article", "recipe for a cake", "programming tips"];
+        console.log(array);
+        var search  = document.getElementById("search").value;
+        var testKey = null;
+        var result  = "";
+        for(var key in array){
+          var auxArray = array[key].split(" ");
+          for(var key2 in auxArray){
+            if(auxArray.indexOf(search) > -1){
+              if(testKey != key){
+                testKey = key;
+                result += "<p>" + array[key] + "</p>";
+              }
+            }
+          }
+        }
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+    <br /><br />
   </body>
 </html>
