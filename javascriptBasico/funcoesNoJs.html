@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+  </head>
+  <body>
+    <h1>Function</h1>
+
+    <h3>Tests:</h3>
+    <script type="text/javascript">
+      console.log("Funções no JS");
+
+      function add(a, b){
+        return parseInt(a) + parseInt(b);
+      }
+
+      document.write("<p>add(5, 8) = " + add(5, 8) + "</p>");
+
+      var factorial = function(n){
+        var fac = 1;
+        for(var y = n; y >= 1; y--){
+          fac *= y;
+        }
+        return fac;
+      };
+      document.write("<p>factorial(4) = " + factorial(4) + "</p>");
+    </script>
+  </body>
+</html>
