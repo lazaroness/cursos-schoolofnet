@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8">
+    <title>If and Else</title>
+  </head>
+  <body>
+    <h1>If and Else</h1>
+    <h3>Simple test:</h3>
+    <script type="text/javascript">
+      console.log("Curso Javascript Básico - Aula: If e Else");
+
+      if(3>2){
+        document.write("true");
+      }else{
+        document.write("false");
+      }
+    </script>
+
+    <h3>Calculator:</h3>
+    <script type="text/javascript">
+      function calculator(a, b, op){
+        if(op === "+"){
+          return a + b;
+        }else if(op === "-"){
+          return a - b;
+        }else if(op === "*"){
+          return a * b;
+        }else{
+          return a / b;
+        }
+      }
+
+      document.write(calculator(5, 2, "+"));
+    </script>
+
+    <h3>Calculate the change:</h3>
+    <script type="text/javascript">
+      function change(value, cash){
+        if(value > cash){
+          return "Error: value > cash";
+        }
+        return "Change = R$ " + (cash - value);
+      }
+
+      document.write(change(15.34, 20));
+    </script>
+  </body>
+</html>
