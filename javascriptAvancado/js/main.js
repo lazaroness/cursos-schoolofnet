@@ -9,7 +9,7 @@ function getTotal(list){
   for(var key in list){
     total += parseFloat(list[key].amount) * parseFloat(list[key].value);
   }
-  return total;
+  document.getElementById('totalValue').innerHTML = formatValue(total);
 }
 
 function setList(list){
@@ -28,6 +28,7 @@ function setList(list){
   }
   table += '</tody>';
   document.getElementById('listTable').innerHTML = table;
+  getTotal(list);
 }
 
 function formatDesc(desc){
@@ -147,4 +148,3 @@ function validation(){
 }
 
 setList(list);
-console.log(getTotal(list));
