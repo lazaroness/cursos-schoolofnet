@@ -50,6 +50,8 @@ function setUpdate(id){
 
   document.getElementById('btnUpdate').style = 'display: inline-block';
   document.getElementById('btnAdd').style = 'display: none';
+
+  document.getElementById('inputIdUpdate').innerHTML = '<input type="hidden" value="'+ id + '" id="idUpdate" />';
 }
 
 function resetForm(){
@@ -58,6 +60,16 @@ function resetForm(){
   document.getElementById('value').value = "";
   document.getElementById('btnUpdate').style = 'display: none';
   document.getElementById('btnAdd').style = 'display: inline-block';
+  document.getElementById('inputIdUpdate').innerHTML = "";
+}
+
+function updateData(){
+  var id     = document.getElementById('idUpdate').value;
+  var obj    = list[id];
+  obj.desc   = document.getElementById('desc').value;
+  obj.amount = document.getElementById('amount').value;
+  obj.value  = document.getElementById('value').value;
+  setList(list);
 }
 
 setList(list);
