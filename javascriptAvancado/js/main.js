@@ -1,14 +1,16 @@
 var list = [
-  {"desc": "PostgreSQL: Banco de dados para aplicações web modernas", "amount": "1", "value": "5.40"},
-  {"desc": "Construindo APIs REST com Node.js", "amount": "1", "value": "1.99"},
-  {"desc": "Node.js Aplicações web real-time com Node.js", "amount": "1", "value": "15.00"},
-  {"desc": "Ionic Framework - Construa aplicativos para todas as plataformas mobile", "amount": "1", "value": "15.00"},
-  {"desc": "Primeiros passos com Node.js", "amount": "1", "value": "15.00"},
-  {"desc": "Xamarin Forms - Desenvolvimento de aplicações móveis multiplataforma", "amount": "1", "value": "15.00"},
-  {"desc": "Orientação a Objetos - Aprenda seus conceitos e suas aplicabilidades de forma efetiva", "amount": "1", "value": "15.00"},
-  {"desc": "Ruby - Aprenda a programar na linguagem mais divertida", "amount": "1", "value": "15.00"},
-  {"desc": "Crie aplicações com Angular - O novo framework do Google", "amount": "1", "value": "15.00"},
-  {"desc": "Segurança em aplicações web", "amount": "1", "value": "15.00"}
+  {"desc": "E-book: PostgreSQL: Banco de dados para aplicações web modernas", "amount": "1", "value": "29.90"},
+  {"desc": "PostgreSQL: Banco de dados para aplicações web modernas", "amount": "1", "value": "69.90"},
+  {"desc": "E-book: Construindo APIs REST com Node.js", "amount": "1", "value": "29.90"},
+  {"desc": "E-book: Node.js Aplicações web real-time com Node.js", "amount": "1", "value": "29.90"},
+  {"desc": "E-book: Ionic Framework - Construa aplicativos para todas as plataformas mobile", "amount": "1", "value": "29.90"},
+  {"desc": "E-book: Primeiros passos com Node.js", "amount": "1", "value": "29.90"},
+  {"desc": "E-book: Xamarin Forms - Desenvolvimento de aplicações móveis multiplataforma", "amount": "1", "value": "29.90"},
+  {"desc": "E-book: Orientação a Objetos - Aprenda seus conceitos e suas aplicabilidades de forma efetiva", "amount": "1", "value": "29.90"},
+  {"desc": "E-book: Ruby - Aprenda a programar na linguagem mais divertida", "amount": "1", "value": "29.90"},
+  {"desc": "E-book: Crie aplicações com Angular - O novo framework do Google", "amount": "1", "value": "29.90"},
+  {"desc": "Crie aplicações com Angular - O novo framework do Google", "amount": "1", "value": "69.90"},
+  {"desc": "E-book: Segurança em aplicações web", "amount": "1", "value": "29.90"}
 ];
 
 function getTotal(list){
@@ -20,13 +22,18 @@ function getTotal(list){
 }
 
 function setList(list){
-  var table = '<thead><tr><td>Description</td><td>Amount</td><td>Value</td><td>Action</td></tr></thead><tbody>';
+  var table = '<thead><tr>';
+  table += '<td style="text-align: center;"><strong>Description</strong></td>';
+  table += '<td style="text-align: center;"><strong>Amount</strong></td>';
+  table += '<td style="text-align: center;"><strong>Value</strong></td>';
+  table += '<td style="text-align: center;"><strong>Action</strong></td>';
+  table += '</tr></thead><tbody>';
   for(var key in list){
     table += '<tr>';
-    table += '<td>'+ formatDesc(list[key].desc) +'</td>';
-    table += '<td>'+ formatAmount(list[key].amount) +'</td>';
-    table += '<td>'+ formatValue(list[key].value) +'</td>';
-    table += '<td>';
+    table += '<td style="color: #4248f4;">'+ formatDesc(list[key].desc) +'</td>';
+    table += '<td style="text-align: center;">'+ formatAmount(list[key].amount) +'</td>';
+    table += '<td style="text-align: center;color: #4248f4;">'+ formatValue(list[key].value) +'</td>';
+    table += '<td style="text-align: center;">';
     table += '<button class="btn btn-default" onclick="setUpdate(' + key + ');">Edit</button>';
     table += '&nbsp;'
     table += '<button class="btn btn-default" onclick="deleteData(' + key + ');">Delete</button>';
@@ -48,7 +55,7 @@ function formatDesc(desc){
 function formatValue(value){
   var str = parseFloat(value).toFixed(2) + "";
   str = str.replace(".", ",");
-  str = "$ " + str;
+  str = "R$ " + str;
   return str;
 }
 
