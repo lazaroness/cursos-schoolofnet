@@ -14,8 +14,19 @@
       </div>
     </nav>
     <div class="contain-fluid">
-      <table id="listTable" class="table table-hover">
-      </table>
+      <div class="form-inline">
+        <div class="form-group">
+          <input type="text" class="form-control" id="desc" placeholder="Description" />
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="amount" placeholder="Amount" />
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="value" placeholder="Value" />
+        </div>
+        <button class="btn btn-default" onclick="addData();">Add</button>
+      </div>
+      <table id="listTable" class="table table-hover"></table>
     </div>
 
     <script type="text/javascript" src="js/config.js"></script>
