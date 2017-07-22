@@ -1,7 +1,14 @@
 var list = [
-  {"desc": "rice", "amount": "1", "value": "5.40"},
-  {"desc": "beer", "amount": "12", "value": "1.99"},
-  {"desc": "meat", "amount": "1", "value": "15.00"}
+  {"desc": "PostgreSQL: Banco de dados para aplicações web modernas", "amount": "1", "value": "5.40"},
+  {"desc": "Construindo APIs REST com Node.js", "amount": "1", "value": "1.99"},
+  {"desc": "Node.js Aplicações web real-time com Node.js", "amount": "1", "value": "15.00"},
+  {"desc": "Ionic Framework - Construa aplicativos para todas as plataformas mobile", "amount": "1", "value": "15.00"},
+  {"desc": "Primeiros passos com Node.js", "amount": "1", "value": "15.00"},
+  {"desc": "Xamarin Forms - Desenvolvimento de aplicações móveis multiplataforma", "amount": "1", "value": "15.00"},
+  {"desc": "Orientação a Objetos - Aprenda seus conceitos e suas aplicabilidades de forma efetiva", "amount": "1", "value": "15.00"},
+  {"desc": "Ruby - Aprenda a programar na linguagem mais divertida", "amount": "1", "value": "15.00"},
+  {"desc": "Crie aplicações com Angular - O novo framework do Google", "amount": "1", "value": "15.00"},
+  {"desc": "Segurança em aplicações web", "amount": "1", "value": "15.00"}
 ];
 
 function getTotal(list){
