@@ -136,7 +136,7 @@ function validation(){
     var divErrors = document.getElementById('errors');
     divErrors.style.display = "block";
     divErrors.style.backgroundColor = "rgba(85, 85, 85, 0.3)";
-    divErrors.style.color = "write";
+    divErrors.style.color = "white";
     divErrors.style.padding = "10px";
     divErrors.style.margin  = "10px";
     divErrors.style.borderRadius = "13px";
