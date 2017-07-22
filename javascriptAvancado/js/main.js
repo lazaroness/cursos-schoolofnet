@@ -69,6 +69,7 @@ function updateData(){
   obj.desc   = document.getElementById('desc').value;
   obj.amount = document.getElementById('amount').value;
   obj.value  = document.getElementById('value').value;
+  resetForm();
   setList(list);
 }
 
