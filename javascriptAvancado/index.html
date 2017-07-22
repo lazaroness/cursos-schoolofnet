@@ -29,7 +29,11 @@
           <button class="btn btn-default" onclick="updateData();">Save</button>
           <button class="btn btn-default" onclick="resetForm();">Cancel</button>
         </span>
-        <button id="btnAdd" class="btn btn-default" onclick="addData();">Add</button>
+        <span id="btnAdd">
+          <button class="btn btn-default" onclick="addData();">Add</button>
+          <button class="btn btn-default" onclick="resetForm();">Reset</button>
+          <button class="btn btn-default" onclick="deleteList();">Delete list</button>
+        </span>
       </div>
       <div id="errors" style="display: none;"></div>
       <table id="listTable" class="table table-hover"></table>

@@ -29,6 +29,7 @@ function setList(list){
   table += '</tody>';
   document.getElementById('listTable').innerHTML = table;
   getTotal(list);
+  saveListStorage(list);
 }
 
 function formatDesc(desc){
@@ -147,4 +148,24 @@ function validation(){
   }
 }
 
-setList(list);
+function deleteList(){
+  if(confirm("Delete this list?")){
+    list = [];
+    setList(list);
+  }
+}
+
+function saveListStorage(list){
+  var jsonStr = JSON.stringify(list);
+  localStorage.setItem("javascriptAvancado", jsonStr);
+}
+
+function initListStorage(){
+  var testList = localStorage.getItem("javascriptAvancado");
+  if(testList){
+    list = JSON.parse(testList);
+  }
+  setList(list);
+}
+
+initListStorage();
